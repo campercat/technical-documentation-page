@@ -1,72 +1,137 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<main id="main-doc">
-  <section class="main-section" id="introduction">
-    <header>What is JavaScript?</header>
-    <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>JavaScript Docs</title>
+</head>
 
-<p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
-
-<p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
-<ul>
-  <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
-  <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
-  <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
-
-  </section>
-  <section class="main-section">
-    <header>Syntax</header>
-    <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:<p>
-    <p>The JavaScript syntax defines two types of values:</p>
-    <ul>
-      <li>Fixed values</li>
-      <li>Variable values</li>
-    </ul>
-    <p>Fixed values are called Literals.</p>
-    <p>Variable values are called Variables.</p>
-    <p>The two most important syntax rules for fixed values are:</p>
-    <ol>
-      <li>Numbers are written with or without decimals:</li>
-      <code class="block"
-        >10.50
-        1001
-      </code>
-      <li>Strings are text, written within double or single quotes:</li>
-      <code class="block"
-        >"John Doe"
-        'John Doe'
-      </code>
-    </ol>
-  </section>
-  <section class="main-section">
-    <header>Variables</header>
-    <p>JavaScript variables are containers for storing data values.</p>
-
-    <p>In this example, <code>x</code>, <code>y</code>, and <code>z</code>, are variables, declared with the <code>var</code> keyword:</p>
-
-
-  </section>
-  <section class="main-section">
-    <header>Comments</header>
-  </section>
-  <section class="main-section">
-    <header>Operators</header>
-  </section>
-  <section class="main-section">
-    <header>Conditionals</header>
-  </section>
-  <section class="main-section">
-    <header>Functions</header>
-  </section>
-  <section class="main-section">
-    <header>Events</header>
-  </section>
-
+<body>
   <nav id="navbar">
-    <header></header>
-    <a class="nav-link">
+    <header>JS Documentation</header>
+    <a href="#what_is_javascript" class="nav-link">What is JavaScript</a>
+    <a href="#syntax" class="nav-link">Syntax</a>
+    <a href="#variables" class="nav-link">Variables</a>
+    <a href="#comments" class="nav-link">Comments</a>
+    <a href="#conditionals" class="nav-link">Conditionals</a>
+    <a href="#functions" class="nav-link">Functions</a>
+    <a href="#classes" class="nav-link">Classes</a>
   </nav>
 
-</main>
+  <main id="main-doc">
+    <section class="main-section" id="what_is_javascript">
+      <header>What is JavaScript</header>
+      <p>
+        JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).
+      </p>
+      <p>
+        JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+      </p>
+      <p>
+        JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+      </p>
+      <ul>
+        <li>
+          Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.
+        </li>
+        <li>
+          Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.
+        </li>
+        <li>
+          Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.
+        </li>
+      </ul>
+    </section>
 
+    <section class="main-section" id="syntax">
+      <header>Syntax</header>
+      <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+      <p>
+      <p>The JavaScript syntax defines two types of values:</p>
+      <ul>
+        <li>Fixed values</li>
+        <li>Variable values</li>
+      </ul>
+      <p>Fixed values are called Literals.</p>
+      <p>Variable values are called Variables.</p>
+      <p>The two most important syntax rules for fixed values are:</p>
+      <ol>
+        <li>Numbers are written with or without decimals:</li>
+        <code class="block">10.50
+            1001
+          </code>
+        <li>Strings are text, written within double or single quotes:</li>
+        <code class="block">"John Doe"
+            'John Doe'
+          </code>
+      </ol>
+    </section>
 
+    <section class="main-section" id="variables">
+      <header>Variables</header>
+      <p>JavaScript variables are containers for storing data values.</p>
+      <p>In this example, <code>x</code>, <code>y</code>, and <code>z</code>, are variables, declared with the
+        <code>var</code> keyword:</p>
+        <code class="block">var x = 10;</code>
+        <code class="block">var y = "apple";</code>
+        <code class="block">var z  = true;</code>
+        <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+    </section>
+
+    <section class="main-section" id="comments">
+      <header>Comments</header>
+      <p>Single line comments start with <code>//</code>.</p>
+      <p>Any text between <code>//</code> and the end of the line will be ignored by JavaScript (will not be executed).</p>
+      <p>Multi-line comments start with <code>/*</code> and end with <code>*/</code>.</p>
+    </section>
+
+    <section class="main-section" id="conditionals">
+      <header>Conditionals</header>
+      <h3>if...else statement</h3>
+      <p>The <code>if</code> statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.</p>
+      <code class="block">if (condition) {
+        statement1
+     } else {
+        statement2
+     }</code>
+     <p>The <code>if...else</code> statement follows the above syntax and it will execute statement1 if the condition inside the parentheses are true. However, if the condition evaluates to be false, then statement2 that is being wrapped inside of the else block will be executed instead.</p>
+     <p>the <code>if...else</code> statement is a great way to organize your logic so the program will know what path to follow based on the condition that you have provided.</p>
+     <h3>while statement</h3>
+     <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
+     <code class="block">while (condition) statement</code>
+     <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+     <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
+    </section>
+
+    <section class="main-section" id="functions">
+      <header>Functions</header>
+      <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+      </p>
+      <ul>
+        <li>The name of the function.</li>
+        <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+        <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+      </ul>
+      <p>For example, the following code defines a simple function named square:</p>
+      <code class="block">function square(number) { return number * number; }</code>
+      <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
+      <code class="block">return number * number;</code>
+      <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+    </section>
+
+    <section class="main-section" id="classes">
+      <header>Classes</header>
+      <p>Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.</p>
+      <p>Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</p>
+      <p>One way to define a class is using a class declaration. To declare a class, you use the class keyword with the name of the class ("Rectangle" here).</p>
+      <code class="block"> class Rectangle { classDefinition }
+      </code>
+    </section>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

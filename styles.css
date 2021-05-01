@@ -1,9 +1,12 @@
 :root {
   font-size: 18px;
+  background-color: #fffffe;
 }
 
 header {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #00214d;
 }
 
 ul {
@@ -18,8 +21,49 @@ code.block {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #f7f7f7;
+  background-color: #f2f4f6;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+}
+
+code {
+  color: #ff5470;
+}
+
+#navbar {
+  width: 250px;
+  height: 100%;
+  margin-top: 1em;
+  margin-right: 1em;
+  position: fixed;
+}
+
+#navbar > a {
+  font-size: 1.2rem;
+  display: block;
+  text-decoration: none;
+  color: #00214d;
+  padding: 0.3em;
+}
+
+#navbar > a:hover {
+  font-weight: bold;
+  background-color: #00ebc7;
+}
+
+#main-doc {
+  margin-left: 250px;
+  padding: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    position:unset;
+    padding: 2em;
+  }
+
+  #main-doc {
+    margin: 0;
+  }
 }
